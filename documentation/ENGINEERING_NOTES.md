@@ -73,3 +73,42 @@ As it helps by providing various function for manipulation and accessing file pa
 
     -- Path provides a filesystem-aware abstraction for paths, giving us methods and properties for working with files and directories while reducing manual string manipulation.
 
+
+## Concept 9: Why do we need ScanResult?
+
+FileInfo represents an individual file, while ScanResult represents the overall outcome and metadata of a scanning operation.
+
+So we have a hierarchy:
+
+                 ScanResult
+                     │
+       ┌─────────────┼─────────────┐
+       │             │             │
+   root_path    total_files     total_size
+       │
+       │
+       └────── files ──────────────┐
+                                   │
+                         ┌─────────┴─────────┐
+                         ▼         ▼         ▼
+                      FileInfo  FileInfo  FileInfo
+
+In other words, FileInfo represents one individual file, while ScanResult represents the complete outcome of a scanning operation, including the collection of discovered FileInfo objects and aggregate information such as total files, total size, categories, and scan duration. This allows other services to reuse the scan result instead of repeatedly scanning the filesystem.
+
+The important relationship :
+
+    Scanner
+      │
+      │ scans filesystem
+      ▼
+   ScanResult
+      │
+      ├── FileInfo
+      ├── FileInfo
+      ├── FileInfo
+      ├── ...
+      │
+      ├── total_files
+      ├── total_size_bytes
+      ├── category_counts
+      └── scan_duration

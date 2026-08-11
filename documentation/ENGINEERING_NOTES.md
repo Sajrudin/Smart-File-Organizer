@@ -55,5 +55,21 @@ A defined structure that represents an entity in an application by specifying th
     "size_bytes": 245000,
     "category": "Documents",
     "modified_time": "...",
-    "sha256": None
-}
+    "sha256": None }
+
+## Concept 5: Why dataclass for FileInfo?
+We're using a dataclass because FileInfo is primarily a structured data object, and dataclasses let us define that structure clearly while automatically handling common object boilerplate.
+
+
+## Concept 6: Why use Path instead of a string for file paths?
+
+In our system, we are using : 
+    - path : Path
+
+instead of : 
+    - path : str
+
+As it helps by providing various function for manipulation and accessing file path.
+
+    -- Path provides a filesystem-aware abstraction for paths, giving us methods and properties for working with files and directories while reducing manual string manipulation.
+

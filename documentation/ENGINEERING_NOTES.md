@@ -14,6 +14,7 @@ A layered architecture is a software design pattern in which the components of a
 This refers to each module having its own concern(functionality). In other words , it means dividing the application into different modules based on the functionality they provide.
 A concern simply means a particular responsibility or job that the software needs to handle.
 For my project :
+
     - Scanning files       → one concern
     - Analyzing storage    → another concern
     - Moving files         → another concern
@@ -46,6 +47,7 @@ And the filesystem is concerned with:
 
 ## Concept 4: What is a Data Model?
 A defined structure that represents an entity in an application by specifying the information it contains and how that information is organized. In this project, FileInfo provides a standardized representation of a file, allowing different services to work with consistent file data instead of relying on loosely structured dictionaries.
+
     file_info = {
     "path": "...",
     "name": "resume.pdf",

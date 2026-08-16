@@ -49,23 +49,4 @@ class ScanResult:
     
 
 
-if __name__ == "__main__":
-    file = FileInfo(
-        "Sample.txt",
-        Path(os.path.join(os.getcwd(), "Sample.txt")),
-        2048,
-        datetime.now(),
-        "Text",
-        "54321"
-    )
-
-    scan_result = ScanResult(
-        Path.cwd(),
-        1,
-        2048,
-        [file],
-        {'text' : 1},
-        0.2
-    )
-    print(scan_result)
     

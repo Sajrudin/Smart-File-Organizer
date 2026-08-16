@@ -1,4 +1,7 @@
 # Engineering Concepts
+
+# PHASE 1 
+
 ## Concept 1: What is the architecture of our application?
 
 The architecture of the application is a monolithic layered architecture. It means separating the each functionality into different modules/layers for maintainability, scalability, and reusability.
@@ -169,3 +172,5 @@ Q. Why different log levels?
 - INFO: General information about program flow.
 - WARNING: Something unexpected but not critical happened.
 - ERROR: A critical error occurred that stopped some functionality. 
+
+# PHASE 1 ( COMPLETED )

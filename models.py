@@ -1,3 +1,4 @@
+from dataclasses import field
 from pathlib import Path
 from dataclasses import dataclass
 from datetime import datetime
@@ -47,6 +48,22 @@ class ScanResult:
     category_counts: dict[str, int]
     scan_duration_seconds: float
     
+
+@dataclass
+class FileMoveOperation:
+    """Records a single file movement for rollback."""
+    original_path: str
+    new_path: str
+    timestamp: str
+
+
+@dataclass
+class Transaction:
+    """Represents an atomic operation containing multiple file movements."""
+    transaction_id: str
+    action_type: str  # e.g., "ORGANIZE", "RENAME"
+    timestamp: str
+    operations: list[FileMoveOperation] = field(default_factory=list)
 
 
     

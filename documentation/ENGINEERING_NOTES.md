@@ -112,3 +112,60 @@ The important relationship :
       ├── total_size_bytes
       ├── category_counts
       └── scan_duration
+
+## Concept 10: Why use loggers?
+Logging is a way to record events that happen while a program is running. Our logger is set up to send these messages to both a file (detailed, permanent storage) and the console (real-time feedback for the user). It allows us to track what the application is doing, diagnose problems, and understand usage patterns without disrupting the application's normal operation.
+
+The logging is divided into 2 parts :
+    - FileHandler
+    - Console_Handler
+
+The Logging flowchart is :
+
+┌──────────────────────────────────────────────────────────────────────┐
+│                        SMART FILE ORGANIZER                           │
+└──────────────────────────────────────────────────────────────────────┘
+                                     │
+                             ┌─────────────────┐
+                             │  SETUP LOGGER   │
+                             │  (setup_logger) │
+                             └────────┬────────┘
+                                      │
+                        ┌─────────────┼─────────────┐
+                        ▼             ▼             ▼
+                LOGS_DIR exists?   Create if NOT   Set Level: DEBUG  
+                        │             │             │
+                        └─────────────┼─────────────┘
+                                      │
+                              ┌──────────────────┐
+                              │  Console Handler │
+                              │  Level: WARNING  │
+                              └────────┬─────────┘
+                                       │
+                              ┌──────────────────┐
+                              │   File Handler   │
+                              │  Level: DEBUG    │
+                              └────────┬─────────┘
+                                       │
+                      Returns Logger Object (DEBUG+) │
+                                       │
+                        ┌────────────────────────────────┐
+                        │        LOGGING OUTPUT            │
+                        ├────────────────────────────────┤
+                        │ DEBUG → File Only              │
+                        │ INFO  → File Only              │
+                        │ WARNING → Console & File       │
+                        │ ERROR → Console & File       │
+                        └────────────────────────────────┘
+
+Q. Why two handlers?
+
+1. Console Handler: We only want to see "important" messages in the terminal (warnings and errors). We don't want the terminal flooded with "Scanning file X..." messages.
+2. File Handler: We want to record EVERYTHING for later review. If something goes wrong, we want the full DEBUG-level log.
+
+Q. Why different log levels?
+
+- DEBUG: Very detailed. Used for tracing code execution.
+- INFO: General information about program flow.
+- WARNING: Something unexpected but not critical happened.
+- ERROR: A critical error occurred that stopped some functionality. 

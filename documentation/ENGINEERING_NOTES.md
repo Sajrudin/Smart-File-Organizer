@@ -174,3 +174,27 @@ Q. Why different log levels?
 - ERROR: A critical error occurred that stopped some functionality. 
 
 # PHASE 1 ( COMPLETED )
+
+## Concept 11: Serialization
+    - Converting Python object to Json/Dictionary is called as Serialization 
+    - using asdict() and json.dump() for writing to file 
+
+## Concept 12: Deserialization
+
+    - Converting JSON to Python object is called as Deserialization 
+    - using json.load() 
+## Concept 13: Transaction 
+    - One logical operation containing multiple smaller operations is called a transaction
+
+Transaction
+   ├── Operation
+   ├── Operation
+   └── Operation
+
+
+## Concept 14: RollBack
+
+    - Undoing a transaction.
+        A -> B
+      becomes
+        B -> A

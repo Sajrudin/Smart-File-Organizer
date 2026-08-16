@@ -471,8 +471,8 @@ flowchart TD
   - Human-readable byte formatters (`format_size(1073741824) -> '1.00 GB'`).
 - **Common Mistakes**: Hardcoding file paths or standardizing categories as strings rather than enum/config parameters.
 - **Done Checklist**:
-  - [ ] `models.py` passes type checking.
-  - [ ] Logger successfully writes to `logs/smart_organizer.log`.
+  - [✅] `models.py` passes type checking.
+  - [✅] Logger successfully writes to `logs/smart_organizer.log`.
 
 ### Phase 2: Directory Scanner Engine
 - **Estimated Files**: `scanner.py`

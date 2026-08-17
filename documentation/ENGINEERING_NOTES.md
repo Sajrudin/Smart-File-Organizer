@@ -96,7 +96,9 @@ So we have a hierarchy:
                          ▼         ▼         ▼
                       FileInfo  FileInfo  FileInfo
 
+
 In other words, FileInfo represents one individual file, while ScanResult represents the complete outcome of a scanning operation, including the collection of discovered FileInfo objects and aggregate information such as total files, total size, categories, and scan duration. This allows other services to reuse the scan result instead of repeatedly scanning the filesystem.
+
 
 The important relationship :
 
@@ -124,6 +126,7 @@ The logging is divided into 2 parts :
     - Console_Handler
 
 The Logging flowchart is :
+
 
 ┌──────────────────────────────────────────────────────────────────────┐
 │                        SMART FILE ORGANIZER                           │
@@ -160,6 +163,7 @@ The Logging flowchart is :
                         │ WARNING → Console & File       │
                         │ ERROR → Console & File       │
                         └────────────────────────────────┘
+
 
 Q. Why two handlers?
 

@@ -1,0 +1,2 @@
+2026-08-17 13:17:21,305 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-1\test_scan_directory0\test_workspace
+2026-08-17 13:17:21,306 - [INFO] - logger - Scan complete: 4 files found (69 bytes) in 0.00s

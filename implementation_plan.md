@@ -103,6 +103,15 @@ smart-file-organizer/
 ├── history/                # Saved transaction logs (history.json)
 ├── logs/                   # System runtime log files (smart_organizer.log)
 ├── sample_data/            # Mock folder structure for testing/demonstration
+├── documentation/          # Contains Engineering_notes for various features & system design concepts
+└── tests/
+    ├── __init__.py
+    ├── conftest.py          # Shared test fixtures (mock files/directories)
+    ├── test_utils.py        # Tests for size formatting & path validation
+    ├── test_scanner.py      # Tests for directory traversal & categories
+    ├── test_analyzer.py     # Tests for storage calculations
+ ___├── test_organizer_history.py    # Tests for organization & name collisions + JSON transactions & rollbacks
+|
 │
 ├── README.md               # User documentation & usage instructions
 └── IMPLEMENTATION_PLAN.md  # Architectural blueprint & development roadmap

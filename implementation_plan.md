@@ -492,8 +492,8 @@ flowchart TD
   - Extension normalization and category mapping logic.
 - **Common Mistakes**: Falling into infinite loops on symlinks or crashing on permission-denied folders.
 - **Done Checklist**:
-  - [ ] Tested scanning folder containing 500+ dummy files.
-  - [ ] Permission errors logged safely without terminating execution.
+  - [✅] Tested scanning folder containing 500+ dummy files.
+  - [✅] Permission errors logged safely without terminating execution.
 
 ### Phase 3: Storage Analyzer
 - **Estimated Files**: `analyzer.py`
@@ -504,7 +504,7 @@ flowchart TD
   - Sorting and extraction of top $N$ largest files.
 - **Common Mistakes**: Sorting files without using raw byte values (e.g. sorting strings like `"100 MB"` instead of raw integer bytes).
 - **Done Checklist**:
-  - [ ] Top 10 largest files correctly identified and sorted.
+  - [✅] Top 10 largest files correctly identified and sorted.
 
 ### Phase 4: File Organizer & History Engine
 - **Estimated Files**: `organizer.py`, `history.py`
@@ -516,8 +516,8 @@ flowchart TD
   - Atomic transaction JSON writer.
 - **Common Mistakes**: Moving files before recording the initial transaction log.
 - **Done Checklist**:
-  - [ ] Files correctly sorted into `Images/`, `Documents/`, etc.
-  - [ ] `history/history_<id>.json` created with full rollback mapping.
+  - [✅] Files correctly sorted into `Images/`, `Documents/`, etc.
+  - [✅] `history/history_<id>.json` created with full rollback mapping.
 
 ### Phase 5: SHA256 Duplicate Detector
 - **Estimated Files**: `duplicates.py`

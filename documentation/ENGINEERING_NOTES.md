@@ -198,3 +198,35 @@ Transaction
         A -> B
       becomes
         B -> A
+
+## Concept 15 : Transactional File Organization & Undo Engine
+
+* **Two-Layer Data Modeling for Rollback Safety**:
+  * `FileMoveOperation`: Records atomic path transitions (`original_path` $\rightarrow$ `new_path`) alongside a timestamp.
+  * `Transaction`: Encapsulates a batch of operations under a single `transaction_id` and `action_type` (e.g., `"ORGANIZE"`, `"RENAME"`).
+
+* **Log-Before-Mutate Principle**:
+  * Every planned disk move is staged into an in-memory transaction before or immediately upon executing `shutil.move()`.
+  * Completed transactions persist to disk as `history/history_<tx_id>.json` to ensure recovery across application restarts.
+
+* **Collision Prevention (`resolve_collision`)**:
+  * Moving files from multi-level directory structures into flattened category folders creates name collisions (e.g., multiple `notes.txt` files).
+  * Automatic collision handling appends timestamp tokens (`filename_YYYYMMDD_HHMMSS.ext`) to avoid data overwrites.
+
+* **Reverse-Order Rollback Strategy**:
+  * Transactions must roll back in exact reverse chronological order (`reversed(tx.operations)`).
+  * Parent directory creation (`mkdir(parents=True, exist_ok=True)`) is enforced prior to file restoration to handle cases where source folders were pruned.
+
+## Concept 16 : Chunked SHA-256 Duplicate Detection Engine
+
+* **Two-Pass I/O Optimization Filter**:
+  * **Pass 1 (Zero-I/O Size Binning)**: Files are grouped strictly by `size_bytes` using in-memory metadata. Files with unique sizes are skipped, eliminating up to 90%+ of disk read operations.
+  * **Pass 2 (Targeted Hashing)**: SHA-256 hashing is executed only on size-collision candidate pools ($N \ge 2$).
+
+* **Constant-Memory Hashing (`HASH_CHUNK_SIZE = 65536`)**:
+  * Direct `.read()` loads entire files into RAM, causing `OutOfMemoryError` on multi-gigabyte media.
+  * Streaming disk reads in fixed 64 KiB chunks through `hashlib.sha256().update()` keeps RAM utilization constant ($O(1)$) regardless of file size.
+
+* **Lazy Hash Evaluation & Safe Deletion**:
+  * The `FileInfo.sha256` attribute is populated lazily only when duplicate analysis is explicitly invoked.
+  * Confirmed duplicates require explicit identifier groupings ($H(f_1) = H(f_2)$) before presenting selective removal via `os.remove()`.

@@ -69,3 +69,15 @@
 2026-08-19 23:37:23,829 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
 2026-08-19 23:37:23,829 - [INFO] - logger - Search query='photo' (type=substring) found 0 matches.
 2026-08-19 23:37:23,830 - [INFO] - logger - Search query='photo' (type=substring) found 3 matches.
+2026-08-19 23:38:51,249 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_generate_rename_plan0\test_workspace
+2026-08-19 23:38:51,251 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:38:51,263 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace
+2026-08-19 23:38:51,265 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:38:51,267 - [DEBUG] - logger - Renamed: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\data_2026_01.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\Report_10.csv
+2026-08-19 23:38:51,268 - [DEBUG] - logger - Renamed: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\data_2026_02.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\Report_11.csv
+2026-08-19 23:38:51,270 - [INFO] - logger - Transaction tx_rename_20260819_233851 saved to S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_rename_20260819_233851.json
+2026-08-19 23:38:51,270 - [INFO] - logger - Batch rename complete. Success: 2, Failed: 0
+2026-08-19 23:38:51,285 - [INFO] - logger - Starting rollback for transaction: tx_rename_20260819_233851
+2026-08-19 23:38:51,286 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\Report_11.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\data_2026_02.csv
+2026-08-19 23:38:51,287 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\Report_10.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\data_2026_01.csv
+2026-08-19 23:38:51,288 - [INFO] - logger - Removed transaction log file: S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_rename_20260819_233851.json

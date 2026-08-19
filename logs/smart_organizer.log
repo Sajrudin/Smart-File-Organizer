@@ -81,3 +81,97 @@
 2026-08-19 23:38:51,286 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\Report_11.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\data_2026_02.csv
 2026-08-19 23:38:51,287 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\Report_10.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-9\test_execute_rename_and_rollba0\test_workspace\data_2026_01.csv
 2026-08-19 23:38:51,288 - [INFO] - logger - Removed transaction log file: S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_rename_20260819_233851.json
+2026-08-19 23:40:31,267 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_storage_analysis0\test_workspace
+2026-08-19 23:40:31,270 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,317 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_empty_directory_analysis0\empty
+2026-08-19 23:40:31,318 - [INFO] - logger - Scan complete: 0 files found (0 bytes) in 0.00s
+2026-08-19 23:40:31,342 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_find_duplicates0\test_workspace
+2026-08-19 23:40:31,345 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,356 - [INFO] - logger - Duplicate scan complete. Found 1 duplicate sets.
+2026-08-19 23:40:31,367 - [INFO] - logger - Deleted duplicate file: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_delete_duplicate_file0\test_workspace\copy_doc1.txt
+2026-08-19 23:40:31,379 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_organize_and_rollback0\test_workspace
+2026-08-19 23:40:31,382 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,417 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_generate_rename_plan0\test_workspace
+2026-08-19 23:40:31,419 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,433 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace
+2026-08-19 23:40:31,437 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,438 - [DEBUG] - logger - Renamed: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\data_2026_01.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\Report_10.csv
+2026-08-19 23:40:31,441 - [DEBUG] - logger - Renamed: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\data_2026_02.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\Report_11.csv
+2026-08-19 23:40:31,442 - [INFO] - logger - Transaction tx_rename_20260819_234031 saved to S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_rename_20260819_234031.json
+2026-08-19 23:40:31,442 - [INFO] - logger - Batch rename complete. Success: 2, Failed: 0
+2026-08-19 23:40:31,454 - [INFO] - logger - Starting rollback for transaction: tx_rename_20260819_234031
+2026-08-19 23:40:31,456 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\Report_11.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\data_2026_02.csv
+2026-08-19 23:40:31,457 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\Report_10.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_execute_rename_and_rollba0\test_workspace\data_2026_01.csv
+2026-08-19 23:40:31,457 - [INFO] - logger - Removed transaction log file: S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_rename_20260819_234031.json
+2026-08-19 23:40:31,469 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_scan_directory0\test_workspace
+2026-08-19 23:40:31,472 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,504 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_search_substring0\test_workspace
+2026-08-19 23:40:31,508 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,522 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_search_glob0\test_workspace
+2026-08-19 23:40:31,525 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,537 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_search_regex0\test_workspace
+2026-08-19 23:40:31,540 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,551 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-10\test_search_with_category_filt0\test_workspace
+2026-08-19 23:40:31,555 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:40:31,556 - [INFO] - logger - Search query='photo' (type=substring) found 0 matches.
+2026-08-19 23:40:31,556 - [INFO] - logger - Search query='photo' (type=substring) found 3 matches.
+2026-08-19 23:45:26,091 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_storage_analysis0\test_workspace
+2026-08-19 23:45:26,093 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,097 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_empty_directory_analysis0\empty
+2026-08-19 23:45:26,097 - [INFO] - logger - Scan complete: 0 files found (0 bytes) in 0.00s
+2026-08-19 23:45:26,127 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_find_duplicates0\test_workspace
+2026-08-19 23:45:26,129 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,140 - [INFO] - logger - Duplicate scan complete. Found 1 duplicate sets.
+2026-08-19 23:45:26,154 - [INFO] - logger - Deleted duplicate file: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_delete_duplicate_file0\test_workspace\copy_doc1.txt
+2026-08-19 23:45:26,168 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace
+2026-08-19 23:45:26,171 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,173 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\copy_doc1.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\copy_doc1.txt
+2026-08-19 23:45:26,174 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\data_2026_01.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\data_2026_01.csv
+2026-08-19 23:45:26,176 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\data_2026_02.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\data_2026_02.csv
+2026-08-19 23:45:26,177 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\doc1.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\doc1.txt
+2026-08-19 23:45:26,179 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\empty.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\empty.txt
+2026-08-19 23:45:26,182 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\notes.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\notes.txt
+2026-08-19 23:45:26,183 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\photo1.jpg -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Images\photo1.jpg
+2026-08-19 23:45:26,185 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\photo2.jpg -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Images\photo2.jpg
+2026-08-19 23:45:26,188 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\script.py -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Code\script.py
+2026-08-19 23:45:26,190 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\song.mp3 -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Music\song.mp3
+2026-08-19 23:45:26,191 - [DEBUG] - logger - Moved: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\subfolder\photo.jpg -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Images\photo.jpg
+2026-08-19 23:45:26,192 - [INFO] - logger - Transaction tx_20260819_234526 saved to S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_20260819_234526.json
+2026-08-19 23:45:26,192 - [INFO] - logger - Organization completed. Success: 11, Failed: 0
+2026-08-19 23:45:26,207 - [INFO] - logger - Starting rollback for transaction: tx_20260819_234526
+2026-08-19 23:45:26,208 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Images\photo.jpg -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\subfolder\photo.jpg
+2026-08-19 23:45:26,209 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Music\song.mp3 -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\song.mp3
+2026-08-19 23:45:26,209 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Code\script.py -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\script.py
+2026-08-19 23:45:26,210 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Images\photo2.jpg -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\photo2.jpg
+2026-08-19 23:45:26,210 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Images\photo1.jpg -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\photo1.jpg
+2026-08-19 23:45:26,211 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\notes.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\notes.txt
+2026-08-19 23:45:26,211 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\empty.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\empty.txt
+2026-08-19 23:45:26,213 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\doc1.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\doc1.txt
+2026-08-19 23:45:26,213 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\data_2026_02.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\data_2026_02.csv
+2026-08-19 23:45:26,214 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\data_2026_01.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\data_2026_01.csv
+2026-08-19 23:45:26,215 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\Documents\copy_doc1.txt -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_organize_and_rollback0\test_workspace\copy_doc1.txt
+2026-08-19 23:45:26,215 - [INFO] - logger - Removed transaction log file: S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_20260819_234526.json
+2026-08-19 23:45:26,233 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_generate_rename_plan0\test_workspace
+2026-08-19 23:45:26,236 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,248 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace
+2026-08-19 23:45:26,251 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,252 - [DEBUG] - logger - Renamed: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\data_2026_01.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\Report_10.csv
+2026-08-19 23:45:26,254 - [DEBUG] - logger - Renamed: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\data_2026_02.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\Report_11.csv
+2026-08-19 23:45:26,254 - [INFO] - logger - Transaction tx_rename_20260819_234526 saved to S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_rename_20260819_234526.json
+2026-08-19 23:45:26,255 - [INFO] - logger - Batch rename complete. Success: 2, Failed: 0
+2026-08-19 23:45:26,266 - [INFO] - logger - Starting rollback for transaction: tx_rename_20260819_234526
+2026-08-19 23:45:26,267 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\Report_11.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\data_2026_02.csv
+2026-08-19 23:45:26,268 - [DEBUG] - logger - Restored: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\Report_10.csv -> C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_execute_rename_and_rollba0\test_workspace\data_2026_01.csv
+2026-08-19 23:45:26,268 - [INFO] - logger - Removed transaction log file: S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_rename_20260819_234526.json
+2026-08-19 23:45:26,286 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_scan_directory0\test_workspace
+2026-08-19 23:45:26,288 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,301 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_search_substring0\test_workspace
+2026-08-19 23:45:26,304 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,317 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_search_glob0\test_workspace
+2026-08-19 23:45:26,320 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,333 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_search_regex0\test_workspace
+2026-08-19 23:45:26,337 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,348 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-11\test_search_with_category_filt0\test_workspace
+2026-08-19 23:45:26,351 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:45:26,351 - [INFO] - logger - Search query='photo' (type=substring) found 0 matches.
+2026-08-19 23:45:26,351 - [INFO] - logger - Search query='photo' (type=substring) found 3 matches.

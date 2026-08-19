@@ -6,12 +6,12 @@ from history import load_latest_transaction, rollback_transaction
 def test_organize_and_rollback(dummy_dir: Path):
     # Step 1: Scan files
     scan_result = scan_directory(dummy_dir)
-    assert scan_result.total_files == 4
+    assert scan_result.total_files == 11
 
     # Step 2: Organize files
     tx, success, fail = organize_files(dummy_dir, scan_result.files)
     assert fail == 0
-    assert success == 4
+    assert success == 11
     assert (dummy_dir / "Documents" / "notes.txt").exists()
     assert (dummy_dir / "Images" / "photo.jpg").exists()
 
@@ -19,12 +19,12 @@ def test_organize_and_rollback(dummy_dir: Path):
     loaded_tx, log_path = load_latest_transaction()
     assert loaded_tx is not None
     assert loaded_tx.transaction_id == tx.transaction_id
-    assert len(loaded_tx.operations) == 4
+    assert len(loaded_tx.operations) == 11
 
     # Step 4: Test Rollback
     rb_success, rb_fail = rollback_transaction(loaded_tx, log_path)
     assert rb_fail == 0
-    assert rb_success == 4
+    assert rb_success == 11
     
     # Check that files were returned to their original paths
     assert (dummy_dir / "notes.txt").exists()

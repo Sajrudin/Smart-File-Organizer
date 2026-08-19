@@ -14,10 +14,10 @@ def test_scan_directory(dummy_dir: Path):
     result = scan_directory(dummy_dir)
 
     # 4 files total (notes.txt, script.py, song.mp3, photo.jpg), .git/config must be skipped
-    assert result.total_files == 4
+    assert result.total_files == 11
     assert result.total_size_bytes > 0
-    assert result.category_counts.get("Documents") == 1
-    assert result.category_counts.get("Images") == 1
+    assert result.category_counts.get("Documents") == 6
+    assert result.category_counts.get("Images") == 3
     assert result.category_counts.get("Code") == 1
     assert result.category_counts.get("Music") == 1
     assert ".git" not in [f.name for f in result.files]

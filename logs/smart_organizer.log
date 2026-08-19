@@ -52,3 +52,10 @@
 2026-08-17 13:34:33,207 - [INFO] - logger - Removed transaction log file: S:\Antigravity Projects\Python-SDE-Projects\Smart-File-Organizer\history\history_tx_20260817_133433.json
 2026-08-17 13:34:33,219 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-5\test_scan_directory0\test_workspace
 2026-08-17 13:34:33,222 - [INFO] - logger - Scan complete: 4 files found (69 bytes) in 0.00s
+2026-08-19 23:34:30,744 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-6\test_find_duplicates0\test_workspace
+2026-08-19 23:34:30,746 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:34:30,803 - [INFO] - logger - Duplicate scan complete. Found 1 duplicate sets.
+2026-08-19 23:34:51,979 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-7\test_find_duplicates0\test_workspace
+2026-08-19 23:34:51,982 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:34:51,990 - [INFO] - logger - Duplicate scan complete. Found 1 duplicate sets.
+2026-08-19 23:34:52,004 - [INFO] - logger - Deleted duplicate file: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-7\test_delete_duplicate_file0\test_workspace\copy_doc1.txt

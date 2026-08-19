@@ -59,3 +59,13 @@
 2026-08-19 23:34:51,982 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
 2026-08-19 23:34:51,990 - [INFO] - logger - Duplicate scan complete. Found 1 duplicate sets.
 2026-08-19 23:34:52,004 - [INFO] - logger - Deleted duplicate file: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-7\test_delete_duplicate_file0\test_workspace\copy_doc1.txt
+2026-08-19 23:37:23,779 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-8\test_search_substring0\test_workspace
+2026-08-19 23:37:23,782 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:37:23,795 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-8\test_search_glob0\test_workspace
+2026-08-19 23:37:23,797 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:37:23,812 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-8\test_search_regex0\test_workspace
+2026-08-19 23:37:23,815 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:37:23,825 - [INFO] - logger - Starting scan on directory: C:\Users\ACER\AppData\Local\Temp\pytest-of-ACER\pytest-8\test_search_with_category_filt0\test_workspace
+2026-08-19 23:37:23,829 - [INFO] - logger - Scan complete: 11 files found (203 bytes) in 0.00s
+2026-08-19 23:37:23,829 - [INFO] - logger - Search query='photo' (type=substring) found 0 matches.
+2026-08-19 23:37:23,830 - [INFO] - logger - Search query='photo' (type=substring) found 3 matches.

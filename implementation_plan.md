@@ -529,7 +529,7 @@ flowchart TD
   - Interactive deletion confirmation prompt.
 - **Common Mistakes**: Loading entire multi-gigabyte files into RAM with `.read()` instead of buffering chunks.
 - **Done Checklist**:
-  - [ ] Identical content files correctly identified regardless of filenames.
+  - [✅] Identical content files correctly identified regardless of filenames.
 
 ### Phase 6: Search & Batch Renamer
 - **Estimated Files**: `search.py`, `renamer.py`
@@ -540,7 +540,7 @@ flowchart TD
   - Sequential zero-padded pattern renamer (`Vacation_001.jpg`).
 - **Common Mistakes**: Overwriting files during batch rename when target names collide.
 - **Done Checklist**:
-  - [ ] Dry-run preview displays before executing actual file renaming.
+  - [✅] Dry-run preview displays before executing actual file renaming.
 
 ### Phase 7: Reporter Engine & Operations Orchestration
 - **Estimated Files**: `reporter.py`, `operations.py`
@@ -551,7 +551,7 @@ flowchart TD
   - Central `operations.py` API connecting CLI to service functions.
 - **Common Mistakes**: Mixing CLI user prompt logic inside calculation services.
 - **Done Checklist**:
-  - [ ] Reports exported successfully to `reports/` folder.
+  - [✅] Reports exported successfully to `reports/` folder.
 
 ### Phase 8: Interactive CLI & Final Integration
 - **Estimated Files**: `main.py`, `README.md`
@@ -562,7 +562,7 @@ flowchart TD
   - Final integration testing across all features.
 - **Common Mistakes**: Unhandled user inputs leading to application crashes.
 - **Done Checklist**:
-  - [ ] Full end-to-end testing completed with 100% features verified.
+  - [✅] Full end-to-end testing completed with 100% features verified.
 
 ---
 

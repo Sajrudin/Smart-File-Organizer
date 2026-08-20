@@ -63,7 +63,7 @@ def find_duplicates(files: list[FileInfo]) -> dict[str, list[FileInfo]]:
     return duplicates
 
 
-def delete_file(file_path: Path) -> bool:
+def delete_duplicate_file(file_path: Path) -> bool:
     """Safely removes a file from disk."""
     try:
         os.remove(file_path)

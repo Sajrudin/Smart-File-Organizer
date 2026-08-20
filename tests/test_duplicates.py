@@ -1,6 +1,6 @@
 from pathlib import Path
 from scanner import scan_directory
-from duplicates import calculate_sha256, find_duplicates, delete_file
+from duplicates import calculate_sha256, find_duplicates, delete_duplicate_file
 
 
 def test_calculate_sha256(dummy_dir: Path):
@@ -34,6 +34,6 @@ def test_delete_duplicate_file(dummy_dir: Path):
     target = dummy_dir / "copy_doc1.txt"
     assert target.exists()
 
-    success = delete_file(target)
+    success = delete_duplicate_file(target)
     assert success is True
     assert not target.exists()

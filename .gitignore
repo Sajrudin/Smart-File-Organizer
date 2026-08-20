@@ -1,5 +1,16 @@
-.venv/
-.pytest_cache/
-./tests/__pycache__
+# Test / sample data
+sample_data/
+
+# Generated application data
+reports/
+history/
+logs/
+
+# Python
 __pycache__/
-./__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Pytest
+.pytest_cache/
